@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shohag Babu | Portfolio</title>
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', sans-serif; background: #0f0f1a; color: #e0e0e0; }
+        nav { display: flex; justify-content: space-between; align-items: center; padding: 20px 60px; background: rgba(255,255,255,0.05); backdrop-filter: blur(10px); position: fixed; top: 0; width: 100%; z-index: 100; }
+    nav .logo { font-size: 1.5rem; font-weight: 700; color: #7c3aed; }
+    nav ul { list-style: none; display: flex; gap: 30px; }
+    nav ul a { color: #e0e0e0; text-decoration: none; transition: color 0.3s; }
+        nav ul a:hover { color: #7c3aed; }
+    .hero { min-height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; padding: 100px 20px 60px; background: radial-gradient(ellipse at top, #1a0533 0%, #0f0f1a 70%); }
+    .hero h1 { font-size: 3.5rem; font-weight: 800; margin-bottom: 16px; }
+    .hero h1 span { color: #7c3aed; }
+    .hero p { font-size: 1.2rem; color: #a0a0b0; max-width: 600px; margin: 0 auto 40px; }
+          .btn { display: inline-block; padding: 14px 36px; background: #7c3aed; color: #fff; border-radius: 50px; text-decoration: none; font-weight: 600; transition: transform 0.2s, box-shadow 0.2s; }
+        .btn:hover { transform: translateY(-3px); box-shadow: 0 8px 25px rgba(124,58,237,0.5); }
+    section { padding: 80px 60px; }
+    h2.section-title { font-size: 2rem; font-weight: 700; text-align: center; margin-bottom: 50px; }
+    h2.section-title span { color: #7c3aed; }
+    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; max-width: 900px; margin: 0 auto; }
+    .about-text p { color: #a0a0b0; line-height: 1.8; margin-bottom: 16px; }
+          .skills-list { display: flex; flex-wrap: wrap; gap: 12px; }
+    .skill-tag { background: rgba(124,58,237,0.2); border: 1px solid #7c3aed; padding: 6px 18px; border-radius: 50px; font-size: 0.9rem; color: #c4b5fd; }
+    .projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; max-width: 1000px; margin: 0 auto; }
+    .card { background: rgba(255,255,255,0.05); border: 1px solid rgba(124,58,237,0.3); border-radius: 16px; padding: 30px; transition: transform 0.2s, border-color 0.2s; }
+    .card:hover { transform: translateY(-6px); border-color: #7c3aed; }
+    .card h3 { font-size: 1.2rem; margin-bottom: 12px; color: #c4b5fd; }
+    .card p { color: #a0a0b0; font-size: 0.95rem; line-height: 1.7; }
+    .contact-form { max-width: 600px; margin: 0 auto; display: flex; flex-direction: column; gap: 20px; }
+    .contact-form input, .contact-form textarea { background: rgba(255,255,255,0.05); border: 1px solid rgba(124,58,237,0.4); border-radius: 10px; padding: 14px 18px; color: #e0e0e0; font-size: 1rem; outline: none; transition: border-color 0.3s; }
+    .contact-form input:focus, .contact-form textarea:focus { border-color: #7c3aed; }
+          .contact-form textarea { min-height: 140px; resize: vertical; }
+          .contact-form button { background: #7c3aed; color: white; border: none; padding: 14px; border-radius: 50px; font-size: 1rem; font-weight: 600; cursor: pointer; transition: opacity 0.2s; }
+    .contact-form button:hover { opacity: 0.85; }
+    footer { text-align: center; padding: 30px; background: rgba(255,255,255,0.03); color: #606070; }
+          @media (max-width: 768px) { .about-grid { grid-template-columns: 1fr; } nav { padding: 16px 24px; } section { padding: 60px 24px; } .hero h1 { font-size: 2.2rem; } }
+  </style>
+</head>
+<body>
+  <nav>
+          <div class="logo">SB.</div>
+    <ul>
+      <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero" id="home">
+          <div>
+      <h1>Hi, I'm <span>Shohag Babu</span></h1>
+      <p>A passionate Full-Stack Developer who loves building modern web experiences that are fast, beautiful, and user-friendly.</p>
+          <a href="#projects" class="btn">View My Work</a>
+        </div>
+      </section>
+
+      <section id="about">
+        <h2 class="section-title">About <span>Me</span></h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>Hello! I'm Shohag Babu, a developer based in Bangladesh. I enjoy building things for the web and solving real-world problems through code.</p>
+            <p>When I'm not coding, you'll find me exploring new technologies, reading about software architecture, or contributing to open-source projects.</p>
+          </div>
+          <div>
+            <div class="skills-list">
+              <span class="skill-tag">HTML & CSS</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">React</span>
+              <span class="skill-tag">Node.js</span>
+              <span class="skill-tag">Next.js</span>
+              <span class="skill-tag">MongoDB</span>
+              <span class="skill-tag">Git & GitHub</span>
+              <span class="skill-tag">Tailwind CSS</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects">
+        <h2 class="section-title">My <span>Projects</span></h2>
+        <div class="projects-grid">
+          <div class="card">
+            <h3>E-Commerce Platform</h3>
+            <p>A full-stack e-commerce web app with user authentication, product management, and payment integration built with React and Node.js.</p>
+          </div>
+          <div class="card">
+            <h3>Task Management App</h3>
+        <p>A productivity app with real-time collaboration features, drag-and-drop interface, and team workspace built using Next.js and MongoDB.</p>
+      </div>
+      <div class="card">
+        <h3>Weather Dashboard</h3>
+        <p>A beautiful weather dashboard that fetches live data from OpenWeather API and displays interactive charts and forecasts.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2 class="section-title">Get In <span>Touch</span></h2>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <textarea placeholder="Your Message"></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+
+      <footer>
+        <p>&copy; 2026 Shohag Babu. Built with love.</p>
+  </footer>
+</body>
+    </html>
